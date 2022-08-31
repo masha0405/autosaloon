@@ -1,0 +1,466 @@
+@font-face {
+    font-family: 'Montserratbold';
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserratregular';
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Opensans';
+    src: url(./fonts/OpenSans-Regular.ttf);
+}
+html {
+    font-size: 0.8vw;
+}
+:root {
+    font-family: 'Montserratbold';
+}
+button {
+    font-family: 'Montserratbold';
+}
+input {
+    font-family: 'Montserratbold';
+}
+body {
+    margin: 0px;
+}
+header {
+    background-color: #12110F;
+    width: 100%;
+    max-height: 1980px;
+    color: white;
+}
+header nav {
+    padding: 2.5% 2% 2.5% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+header nav article {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    width: 34%;
+}
+header nav img {
+    width: 5%;
+    margin-right: 3%;
+}
+header nav span {
+    margin-right: 7%;
+    font-size: 1.125rem;
+    font-family: 'Montserratregular';
+}
+header nav div {
+    font-size: 1rem;
+    color: #135EC5;
+    text-align: center;
+    background-color: white;
+    width: 20%;
+    border-radius: 30px;
+}
+.logo {
+    width: 2.8%;
+}
+header nav p {
+    margin: 0px;
+    padding: 17% 27% 17% 27%;
+}
+header nav a {
+    color: #135EC5;
+    text-decoration: none;
+}
+header section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #131210;
+    font-size: 12rem;
+}
+header section div:last-of-type {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Montserratregular';
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.centr {
+    width: 100%;
+    padding-bottom: 18%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.centr div {
+    padding-left: 15%;
+    padding-right: 7%;
+}
+.centr div:last-child {
+    padding-left: 0%;
+    padding-right: 4%;
+}
+header section button {
+    height: 12px;
+    width: 12px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(60, 60, 60, 1);
+}
+header section button:focus {
+    background-color: #135EC5;
+}
+header section img {
+    width: 40%;
+    position: absolute;
+    margin-top: 6%;
+}
+.search {
+    padding: 2.2% 11% 5% 11%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.search input {
+    background-color: #12110F;
+    padding-bottom: 1%;
+    color: #3C3C3C;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #3C3C3C;
+    font-size: 2rem;
+    margin-right: 1%;
+}
+header input:last-of-type {
+    width: 11%;
+    background-color: rgba(19, 94, 197, 1);
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 1% 4% 1% 3.5%;
+}
+input:focus {
+    outline: none;
+}
+main {
+    background-color: white;
+}
+main h6 {
+    color: #C1C1C1;
+    font-size: 1.2rem;
+    margin: 3.5% 46% 3.5% 46%;
+    font-weight: 500;     
+}
+.logopride {
+    margin: 0% 4.5% 0% 4.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.logopride button{
+    border: none;
+    padding: 0px;
+    opacity: 0.3;
+}
+.logopride button:focus {
+    opacity: 1;
+    border: none;
+    outline: none;
+}
+/*Чи можливо зробити так, щоб підсвітка іншим кольором при натисканні через псевдоклас фокус, була незалежною
+ для баттонів які знаходяться в різних контейнерах? при натисканні на лого авто зникає фокусна підсвітка 
+ для кнопок в хедері*/
+ /*І чи можна задати фокус по умолчанию?*/
+ .logopride button:nth-child(1) {
+    width: 3.5%;
+}
+.logopride button:nth-child(2) {
+    width: 5.8%;
+}
+.logopride button:nth-child(3) {
+    width: 3.4%;
+}
+.logopride button:nth-child(4) {
+    width: 3.7%;
+}
+.logopride button:nth-child(5) {
+    width: 6.2%;
+}
+.logopride button:nth-child(6) {
+    width: 3.1%;
+}
+.logopride button:nth-child(7) {
+    width: 3.3%;
+}
+.logopride button img {
+    width: 100%;
+}
+main article:first-of-type {
+    width: 77%;
+    margin: 10.8% 13.7% 8% 9%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+main article:first-of-type img {
+    grid-row: 1/4;
+    width: 100%;
+    margin-top: 2.3%;
+}
+main article h3 {
+    color: #135EC5;
+    font-size: 3.75rem;
+    margin-top: 1.4%;
+}
+main article div {
+    color: #C1C1C1;
+    font-size: 1rem;
+    line-height: 200%;
+    font-family: 'Opensans';
+}
+main article button {
+    width: 30%;
+    height: min-content;
+    padding: 2.9% 4.2% 2.9% 4.2%;
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(19, 94, 197, 1);
+    border: none;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+main article:nth-of-type(2) div {
+    margin-bottom: 5%;
+    background-color: #135EC5;
+}
+main article:nth-of-type(2) h3 {
+    color: white;
+    padding: 7.5% 27% 4.5% 29%;
+    margin: 0px;
+    white-space: nowrap;
+}
+main article:nth-of-type(2) button {
+    width: 12%;
+    margin: 0% 44% 15.4% 44%;
+    padding: 1.1% 3.3% 1.1% 3.3%;
+    border: 2px solid white;
+}
+main article:nth-of-type(2) img {
+    width: 31.5%;
+    position: absolute;
+    margin: -12% 34.25% 0% 34.25%;
+}
+main section {
+    margin: 13% 10% 0% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sale1 {
+    width: 28%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sale1 div:first-child {
+    background-color: #135EC5;
+    width: 100%;
+}
+.salebutt {
+    background-color: white;
+    color: #135EC5;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    width: 20%;
+    padding: 2% 3% 1.5% 4%;
+    margin: 6% 5% 31% 75%;
+}
+.salename {
+    color: black;
+    margin-top: 30%;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+}
+.salename2 {
+    color: #135EC5;
+    margin-top: 4%;
+    margin-bottom: 0px;
+    font-size: 0.75rem;
+}
+.saletext {
+    color: #C1C1C1;
+    margin-top: 8.5%;
+    margin-bottom: 0px;
+    font-size: 1rem;
+}
+.sale1 div:last-of-type {
+    width: 100%;
+    margin: 8.5% 7.5% 0% 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.salepay {
+    color: green;
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+.salebutt2 {
+    border: none;
+    border-radius: 30px;
+    background-color: #C1C1C1;
+    color: white;
+    width: 40%;
+    font-size: 1rem;
+    padding: 3.5% 10% 3.5% 8%;
+    white-space: nowrap;
+}
+.sale1 img {
+    width: 14%;
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 6%;
+}
+.sale2 {
+    width: 55.4%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.sale2 div:first-child{
+    width: 50.7%;
+}
+.sale2 div:last-child{    
+    width: 49.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #135EC5;
+}
+.sale2 div:first-child div:first-child {
+    margin-top: 13%;
+    margin-bottom: 30%;
+    width: 90.7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#sale2salename2 {
+    color: #C1C1C1;
+}
+#sale2salename {
+    color: #135EC5;
+}
+#sale2saletext {
+    width: 71%;
+    line-height: 2;
+    margin-top: 10%;
+    font-family: 'Opensans';
+}
+#sale2salebutt2 {
+    background-color: #135EC5;
+    margin-top: 18%;
+}
+#sale2salebutt {
+    margin: 13% 0% 3% 73%;
+}
+#clak {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 14%;
+    margin-bottom: 18.5%;
+}
+#clak button {
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 50%;
+    padding: 0px;
+    background-color: rgb(0, 0, 121);
+}
+#clak button:focus {
+    transform: scale(2);
+    background-color: white;
+}
+/*Почему если в контейнере одному элементу дать позишин абсолют, находящиеся в этом же контейнере 
+по соседству кнопки перестают отвечать на :focus?*/
+.sale2 img {
+    width: 159%;
+}
+footer {
+    margin: 15.6% 13% 0% 13%;   
+}
+footer .search {
+    padding: 0% 3.4% 10% 3.4%;
+}
+footer .search input {
+    background-color: inherit;
+    color: black;
+    border-bottom: 1px solid #C1C1C1;
+    font-size: 1.125rem;
+}
+footer .logopride {
+    margin-bottom: 6.1%;
+}
+footer section:last-of-type {
+    background-color: #135EC5;
+}
+#preprelastsearch {
+    padding-bottom: 4.6%;
+}
+.buttadvsearch {
+    background-color: #135EC5;
+    color: white;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    width: 12.8%;
+    border: none;
+    padding: 1% 2% 0.7% 2%;
+    margin-left: 43.5%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+#prelastsearch {
+    padding-top: 4.8%;
+    padding-bottom: 4.3%;
+}
+#lastsearch {
+    padding-bottom: 3.6%;
+}
+#lastbuttonsearch {
+    background-color: white;
+    color: #135EC5;
+    width: 14%;
+    font-size: 1rem;
+    padding: 1.5% 4.5% 1.5% 4.5%;
+    border: none;
+    border-radius: 30px;
+    margin-left: 43%;
+    margin-bottom: 3.7%;
+}
+footer section:last-of-type input::placeholder {
+    color: #4c9cf7;
+}
+footer section:last-of-type input {
+    border-color: #4c9cf7;
+    color: white;
+}
+input:focus::placeholder {
+    opacity: 0;
+}
